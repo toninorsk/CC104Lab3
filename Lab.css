@@ -1,0 +1,910 @@
+.flex-container1 {
+    display: flex;
+    justify-content: center;
+    background-color: lightgreen;
+  }
+  
+  .flex-container1 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .flex-container1 > div:hover {
+      background-color: gray;
+      color: white;
+  }
+
+/* Tooltip on the Top */
+.tooltipTop {
+    position : relative;
+    display: inline-block;
+}
+
+.tooltipTop .tooltiptextTop {
+    visibility: hidden;
+    width: fit-content;
+    height: fit-content;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid yellow;
+
+     /* Position the top tooltip */
+     position: absolute;
+     z-index: 1;
+     bottom: 105%;
+     right: 25px;
+}
+
+.tooltipTop:hover .tooltiptextTop {
+    visibility: visible;
+}
+ 
+/* Tooltip on the Right */
+  .tooltipRight {
+      position : relative;
+      display: inline-block;
+  }
+
+  .tooltipRight .tooltiptextRight {
+      visibility: hidden;
+      width: fit-content;
+      height: fit-content;
+      background-color: lightgoldenrodyellow;
+      color: black;
+      text-align: center;
+      border-radius: 20px;
+      border: 2px solid yellow;
+
+       /* Position the right tooltip */
+       position: absolute;
+       z-index: 1;
+       left: 100%;
+  }
+
+  .tooltipRight:hover .tooltiptextRight {
+      visibility: visible;
+  }
+
+/* Tooltip on the Bottom */
+.tooltipBottom {
+    position : relative;
+    display: inline-block;
+}
+
+.tooltipBottom .tooltiptextBottom {
+    visibility: hidden;
+    width: fit-content;
+    height: fit-content;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid yellow;
+
+     /* Position the bottom tooltip */
+     position: absolute;
+     z-index: 1;
+     top: 105%;
+     left: 25px;
+}
+
+.tooltipBottom:hover .tooltiptextBottom {
+    visibility: visible;
+}
+ 
+/* Tooltip on the left */
+.tooltipLeft {
+    position : relative;
+    display: inline-block;
+}
+
+.tooltipLeft .tooltiptextLeft {
+    visibility: hidden;
+    width: fit-content;
+    height: fit-content;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid yellow;
+
+     /* Position the left tooltip */
+     position: absolute;
+     z-index: 1;
+     right: 100%;
+}
+
+.tooltipLeft:hover .tooltiptextLeft {
+    visibility: visible;
+}
+
+/* ------------------------------------- */
+
+.tooltipBottomArrow {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+  }
+  
+  .tooltipBottomArrow .tooltiptextBottomArrow {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%; 
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltipBottomArrow .tooltiptextBottomArrow::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltipBottomArrow:hover .tooltiptextBottomArrow {
+    visibility: visible;
+  }
+
+  .tooltipBottomArrow:hover {
+    background-color: silver;
+}
+
+/* ------------------------------------- */
+
+.tagcolor {
+    background-color: silver;
+    color: firebrick;
+}
+
+.stylearrow {
+    background-color: lightgreen;  
+    text-align: center;
+    left: 120px;
+}
+
+/* ------------------------------------- */
+
+.tooltipTopArrow {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltipTopArrow .tooltiptextTopArrow {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltipTopArrow .tooltiptextTopArrow::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltipTopArrow:hover .tooltiptextTopArrow {
+  visibility: visible;
+}
+
+.tooltipTopArrow:hover {
+    background-color: silver;
+}
+
+/* ------------------------------------- */
+
+.tooltipLeftArrow {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltipLeftArrow .tooltiptextLeftArrow {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltipLeftArrow .tooltiptextLeftArrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltipLeftArrow:hover .tooltiptextLeftArrow {
+  visibility: visible;
+}
+
+.tooltipLeftArrow:hover {
+    background-color: silver;
+}
+
+/* ------------------------------------- */
+
+.tooltipRightArrow {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+  }
+  
+  .tooltipRightArrow .tooltiptextRightArrow {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+  }
+  
+  .tooltipRightArrow .tooltiptextRightArrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+  .tooltipRightArrow:hover .tooltiptextRightArrow {
+    visibility: visible;
+  }
+
+  .tooltipRightArrow:hover {
+    background-color: silver;
+}
+  
+/* ------------------------------------- */
+
+.tooltipFade {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+  }
+  
+  .tooltipFade .tooltiptextFade {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+  
+  .tooltipFade:hover .tooltiptextFade {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .tooltipFade:hover {
+    background-color: silver;
+}
+
+/* ------------------------------------- */
+
+.paginationSimple {
+    display: inline-block;
+}
+
+.paginationSimple a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* ------------------------------------- */
+
+.paginationActive1 {
+    display: inline-block;
+  }
+  
+  .paginationActive1 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .paginationActive1 a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .paginationActive1 a:hover:not(.active) {background-color: #ddd;}
+
+/* ------------------------------------- */
+
+.paginationActiveRounded {
+    display: inline-block;
+  }
+  
+  .paginationActiveRounded a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .paginationActiveRounded a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .paginationActiveRounded a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+/* ------------------------------------- */
+
+.paginationTransition {
+    display: inline-block;
+  }
+  
+  .paginationTransition a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .paginationTransition a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .paginationTransition a:hover:not(.active) {
+    background-color: #ddd;
+  }
+
+/* ------------------------------------- */
+
+.paginationBorder {
+  display: inline-block;
+}
+
+.paginationBorder a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.paginationBorder a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.paginationBorder a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* ------------------------------------- */
+
+.paginationRound {
+  display: inline-block;
+}
+
+.paginationRound a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd; /* Gray */
+}
+
+.paginationRound a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.paginationRound a:hover:not(.active) {background-color: #ddd;}
+
+.paginationRound a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.paginationRound a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* ------------------------------------- */
+
+.paginationSpace {
+  display: inline-block;
+}
+
+.paginationSpace a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  /* 0 is for top and bottom. Feel free to change it */
+}
+
+.paginationSpace a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.paginationSpace a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* ------------------------------------- */
+
+.paginationSize {
+  display: inline-block;
+}
+
+.paginationSize a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  font-size: 50px;
+}
+
+.paginationSize a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.paginationSize a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* ------------------------------------- */
+
+.center {
+  text-align: center;
+}
+
+.paginationSpace {
+  display: inline-block;
+}
+
+.paginationSpace a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.paginationSpace a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.paginationSpace a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* ------------------------------------- */
+
+.paginationBorder {
+  display: inline-block;
+}
+
+.paginationBorder a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.paginationBorder a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.paginationBorder a:hover:not(.active) {background-color: #ddd;}
+
+/* ------------------------------------- */
+
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {color: green;}
+
+/* ------------------------------------- */
+
+ul.ver1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.ver1 a {
+  display: block;
+  width: 130px;
+  background-color: #dddddd;
+}
+
+/* ------------------------------------- */
+
+ul.ver2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+} 
+
+li.ver2 a {
+  display: block;
+  background-color: #dddddd;
+}
+
+/* ------------------------------------- */
+
+ul.ver3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: lightgreen;
+}
+
+li.ver3 a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li.ver3 a:hover {
+  background-color: lightyellow;
+  color: green;
+}
+
+/* ------------------------------------- */
+
+li.ver4 a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.ver4 a.active1 {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li.ver4 a:hover:not(.active1) {
+  background-color: lightyellow;
+  color: green;
+}
+
+/* ------------------------------------- */
+
+ul.ver5 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: lightgreen;
+  border: 1px solid #555;
+}
+
+li.ver5 a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.ver5 {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li.ver5:last-child {
+  border-bottom: none;
+}
+
+li.ver5 a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li.ver5 a:hover:not(.active) {
+  background-color: lightyellow;
+  color: green;
+}
+
+/* ------------------------------------- */
+body {
+  margin: 0;
+}
+
+ul.ver6 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: lightgreen;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li.ver6 a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.ver6 a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+li.ver6 a:hover:not(.active) {
+  background-color: lightyellow;
+  color: green;
+}
+
+/* ------------------------------------- */
+
+ul.ver7 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.ver7 {
+  display: inline;
+}
+
+/* ------------------------------------- */
+
+ul.ver8 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li.ver8 {
+  float: left;
+}
+
+li.ver8 a {
+  display: block;
+  padding: 8px;
+  background-color: lightgreen;
+}
+
+/* ------------------------------------- */
+
+ul.ver9 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+li.ver9 {
+  float: left;
+}
+
+li.ver9 a {
+  display: block;
+  padding: 8px;
+}
+
+/* ------------------------------------- */
+
+ul.ver10 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+li.ver10 {
+  float: left;
+}
+
+li.ver10 a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.ver10 a:hover {
+  background-color: lightyellow;
+}
+
+/* ------------------------------------- */
+
+ul.ver11 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+li.ver11 {
+  float: left;
+}
+
+li.ver11 a {
+  display: block;
+  color: black;
+  text-anchor: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.ver11 a:hover:not(.active) {
+  background-color: lightyellow;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+/* ------------------------------------- */
+
+ul.ver12 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+li.ver12 {
+  float: left;
+}
+
+li.ver12 a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.ver12 a:hover:not(.active) {
+  background-color: lightyellow;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/* ------------------------------------- */
+
+ul.ver13 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+li.ver13 {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li.ver13:last-child {
+  border-right: none;
+}
+
+li.ver13 a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.ver13 a:hover:not(.active) {
+  background-color: lightyellow;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/* ------------------------------------- */

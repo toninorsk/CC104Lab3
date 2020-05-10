@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab</title>
+    <link rel="stylesheet" href="Lab.css">
+</head>
+
+<body>
+    <h1>CSS Lab</h4>
+        <h4>Nattawoot.denduangchai@gmail.com</h4>
+        <h4>What are <ul>
+                <li>Tooltip</li>
+                <li>Pagination</li>
+                <li>Navigation bar</li>
+                <li>Dropdown</li>
+            </ul>
+        </h4>
+        <hr>
+        <h2 style="background-color: gold;">CSS Tooltip</h2>
+        <p>A tooltip is often used to specify extra information about something when the user moves the mouse pointer
+            over an element:</p>
+
+        <p><u>exp.</u> try moving the mouse pointer over an element to see a tooltip on different positions.</p>
+        <div class="flex-container1">
+            <div class="tooltipTop"><b>Top</b><span class="tooltiptextTop">Tooltip</span></div>
+            <div class="tooltipRight"><b>Right</b><span class="tooltiptextRight">Tooltip</span></div>
+            <div class="tooltipBottom"><b>Bottom</b><span class="tooltiptextBottom">Tooltip</span></div>
+            <div class="tooltipLeft"><b>Left</b><span class="tooltiptextLeft">Tooltip</span></div>
+        </div><br>
+
+        <table style="width: 100%; text-align: center; background-color: #f1f1f1;">
+            <tr>
+                <td>
+                    <div class=" tooltipRight " style=" background-color: lightgreen;">Hover over me
+                        <span class=" tooltiptextRight ">Right</span>
+                    </div>
+                </td>
+                <td>
+                    <div class=" tooltipLeft " style=" background-color: lightgreen;">Hover over me
+                        <span class=" tooltiptextLeft ">Left</span>
+                    </div>
+                </td>
+                <td>
+                    <div class=" tooltipTop " style=" background-color: lightgreen;">Hover over me
+                        <span class=" tooltiptextTop ">Top</span>
+                    </div>
+                </td>
+                <td>
+                    <div class=" tooltipBottom" style=" background-color: lightgreen;">Hover over me
+                        <span class=" tooltiptextBottom">Bottom</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <h2>CSS Tooltip with Arrow</h2>
+        <p>To create an arrow that should appear from a specific side of the tooltip, add "empty" content after tooltip,
+            with the pseudo-element class ::after together with the content property. The arrow itself is created using
+            borders. This will make the tooltip look like a speech bubble.</p>
+
+        <p><u>exp.</u> CSS Tooltip with Bottom Arrow</p>
+        <p>Position the arrow inside the tooltip: <span class=" tagcolor">top: 100%</span> will place the arrow at the
+            bottom of the tooltip. <span class=" tagcolor "> left: 50%</span> will center the arrow.</p>
+        <p><b>Note:</b> The <span class=" tagcolor"> border-width</span> property specifies the size of the arrow. If
+            you change this, also change the <span class=" tagcolor">margin-left</span> value to the same. This will
+            keep the arrow centered.</p>
+        <p>The <span class=" tagcolor">border-color</span> is used to transform the content into an arrow. We set the
+            top border to black, and the rest transparent. If all sides were black, you would end up with a black square
+            box.</p>
+
+        <div class="tooltipBottomArrow stylearrow">Hover over me
+            <span class="tooltiptextBottomArrow">Bottom Arrow</span>
+        </div>
+
+        <p><u>exp.</u> CSS Tooltip with Top Arrow</p>
+
+        <div class="tooltipTopArrow stylearrow">Hover over me
+            <span class="tooltiptextTopArrow">Top Arrow</span>
+        </div>
+
+        <p><u>exp.</u> CSS Tooltip with Left Arrow</p>
+
+        <div class=" tooltipLeftArrow stylearrow">Hover over me
+            <span class=" tooltiptextLeftArrow">Left Arrow</span>
+        </div>
+
+        <p><u>exp.</u> CSS Tooltip with Right Arrow</p>
+
+        <div class=" tooltipRightArrow stylearrow">Hover over me
+            <span class=" tooltiptextRightArrow">Right Arrow</span>
+        </div><br>
+
+        <h2>CSS Fade In Tooltips (Animation)</h2>
+        <p>If you want to fade in the tooltip text when it is about to be visible, you can use the CSS <span
+                class=" tagcolor">transition</span> property together with the <span class=" tagcolor">opacity</span>
+            property, and go from being completely invisible to 100% visible, in a number of specified seconds (1.5
+            seconds in our example):</p>
+
+        <div class="tooltipFade stylearrow">Hover over me
+            <span class="tooltiptextFade">Tooltip Fade</span>
+        </div>
+        <hr>
+        <h2 style="background-color: gold;">CSS Pagination</h2>
+        <h2>Simple Pagination</h2>
+        <p>If you have a website with lots of pages, you may wish to add some sort of pagination to each page:</p>
+
+        <div class=" paginationSimple">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div><br>
+
+        <h2>Active and Hoverable Pagination</h2>
+        <p>Highlight the current page with an <span class="tagcolor">.active</span> class, and use the <span
+                class=" tagcolor">:hover</span> selector to change the color of each page link when moving the mouse
+            over them:</p>
+
+        <div class="paginationActive1">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Rounded Active and Hoverable Buttons</h2>
+        <p>Add the <span class=" tagcolor">border-radius</span> property if you want a rounded "active" and "hover"
+            button:</p>
+
+        <div class="paginationActiveRounded">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Hoverable Transition Effect</h2>
+        <p>Add the <span class=" tagcolor">transition</span> property to the page links to create a transition effect on
+            hover:</p>
+
+        <div class="paginationTransition">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Bordered Pagination</h2>
+        <p>Use the <span class=" tagcolor">border</span> property to add borders to the pagination:</p>
+
+        <div class="paginationBorder">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Rounded Borders</h2>
+        <p><b>Tip:</b> Add rounded borders to your first and last link in the pagination:</p>
+
+        <div class="paginationRound">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Space Between Links</h2>
+        <p><b>Tip:</b> Add the <span class=" tagcolor">margin</span> property if you do not want to group the page
+            links:</p>
+
+        <div class="paginationSpace">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Pagination Size</h2>
+        <p>Change the size of the pagination with the <span class=" tagcolor">font-size</span> property to make the
+            pagination smaller or bigger:</p>
+
+        <div class="paginationSize">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+
+        <h2>Centered Pagination</h2>
+        <p>To center the pagination, wrap a container element (link div) around it with <span class=" tagcolor">
+                text-align:center</span></p>
+
+        <div class="center">
+            <div class="paginationSpace">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+
+        <h2>More Examples</h2>
+        <p>Next/Previous buttons:</p>
+        <div class="paginationBorder">
+            <a href="#">❮</a>
+            <a href="#">❯</a>
+        </div>
+
+        <p>Navigation pagination:</p>
+        <div class="paginationBorder">
+            <a href="#" class="active">Home</a>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+
+        <h2>Breadcrumbs</h2>
+        <p>Another variation of pagination is so-called "breadcrumbs":</p>
+
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pictures</a></li>
+            <li><a href="#">Summer 15</a></li>
+            <li>Italy</li>
+        </ul>
+        <hr>
+        <h2 style="background-color: gold;">CSS Navigation Bar</h2>
+        <p>Having easy-to-use navigation is important for any web site.</p>
+        <p>With CSS you can transform boring HTML menus into good-looking navigation bars.</p>
+
+        <h2>Navigation Bar = List of Links</h2>
+        <p>A navigation bar needs standard HTML as base.</p>
+        <p>In our example we will build the navigation bar from a standard HTML list.</p>
+        <p>A navigation bar is basically a list of links, so using the ul and li elements make perfect sense:</p>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://www.digitalskill.org/">www.digitalskill.org</a></li>
+        </ul>
+
+        <p>Now, let's remove the bullets and the margins and padding from the list:</p>
+
+        <ul style="list-style-type: none;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://www.digitalskill.org/">www.digitalskill.org</a></li>
+        </ul>
+
+        <p>Example explained:
+        <ul>
+            <li><span class=" tagcolor">list-style-type: none;</span> - Removes the bullets. A navigation bar does
+                not need list markers</li>
+            <li>Set <span class=" tagcolor">margin: 0;</span> and <span class=" tagcolor">padding: 0;</span> to
+                remove browser default settings</li>
+        </ul>
+        The code in the example above is the standard code used in both vertical, and horizontal navigation bar,
+        which you will learn more about in the next chapters.
+        </p>
+        <h2>CSS Vertical Navigation Bar</h2>
+        <p>To build a vertical navigation bar, you can style the a elements inside the list, in addition to the code
+            from the previous page:</p>
+
+        <ul class=" ver1">
+            <li class=" ver1"><a href="#home">Home</a></li>
+            <li class=" ver1"><a href="#news">News</a></li>
+            <li class=" ver1"><a href="#contact">Contact</a></li>
+            <li class=" ver1"><a href="#about">About</a></li>
+            <li class=" ver1"><a href="https://www.digitalskill.org/">www.digitalskill.org</a></li>
+        </ul>
+
+        <p>A background color is added to the links to show the link area.</p>
+        <p>Notice that the whole link area is clickable, not just the text.</p>
+
+        <p>Example explained:
+        <ul>
+            <li><span class=" tagcolor">display: block;</span> - Displaying the links as block elements makes the
+                whole link area clickable (not just the text), and it allows us to specify the width (and padding,
+                margin, height, etc. if you want)</li>
+            <li><span class=" tagcolor">width: 60px;</span> - Block elements take up the full width available by
+                default. We want to specify a 60 pixels width</li>
+        </ul>
+        You can also set the width of ul, and remove the width of a, as they will take up the full width available
+        when displayed as block elements. This will produce the same result as our previous example:
+        </p>
+
+        <ul class=" ver2">
+            <li class=" ver2"><a href="#home">Home</a></li>
+            <li class=" ver2"><a href="#news">News</a></li>
+            <li class=" ver2"><a href="#contact">Contact</a></li>
+            <li class=" ver2"><a href="#about">About</a></li>
+            <li class=" ver2"><a href="https://www.digitalskill.org/">www.digitalskill.org</a></li>
+        </ul>
+
+        <h2>Vertical Navigator Bar Examples</h2>
+        <p>Create a basic vertical navigation bar with a green background color and change the background color of the
+            links when the user moves the mouse over them:</p>
+
+        <ul class=" ver3">
+            <li class=" ver3"><a href="#home">Home</a></li>
+            <li class=" ver3"><a href="#news">News</a></li>
+            <li class=" ver3"><a href="#contact">Contact</a></li>
+            <li class=" ver3"><a href="#about">About</a></li>
+            <li class=" ver3"><a href="https://www.digitalskill.org/">www.digitalskill.org</a></li>
+        </ul>
+
+        <h2>Active/Current Navigation Link</h2>
+        <p>Add an "active" class to the current link to let the user know which page he/she is on:</p>
+        <p>In this example, we create an "active" class with a green background color and a white text. The class is
+            added to the "Home" link.</p>
+
+        <ul class=" ver3">
+            <li class=" ver4"><a class="active1" href="#home">Home</a></li>
+            <li class=" ver4"><a href="#news">News</a></li>
+            <li class=" ver4"><a href="#contact">Contact</a></li>
+            <li class=" ver4"><a href="#about">About</a></li>
+            <li class=" ver4"><a href="https://www.digitalskill.org/">www.digitalskill.org</a></li>
+        </ul>
+
+        <h2>Center Links & Add Borders</h2>
+        <p>Add <span class=" tagcolor">text-align:center</span> to li or a to center the links.</p>
+        <p>Add the <span class=" tagcolor"> border</span> property to ul add a border around the navbar. If you also
+            want borders inside the navbar, add a <span class=" tagcolor">border-bottom</span> to all li elements,
+            except for the last one:</p>
+
+        <ul class=" ver5">
+            <li class=" ver5"><a class="active" href="#home">Home</a></li>
+            <li class=" ver5"><a href="#news">News</a></li>
+            <li class=" ver5"><a href="#contact">Contact</a></li>
+            <li class=" ver5"><a href="#about">About</a></li>
+            <li class=" ver5"><a href="https://www.digitalskill.org/">www.digitalskill.org</a></li>
+        </ul>
+
+        <h2>Full-height Fixed Vertical Navbar</h2>
+        <p>Create a full-height, "sticky" side navigation:</p>
+
+        <p><button><a href="Full-height.html">Click</a></button> to visit Full-height Fixed Vertical Navbar!</p>
+
+        <hr>
+        <h2>CSS Horizontal navigation Bar</h2>
+        <h2>Horizon Navigation Bar</h2>
+        <p>There are two ways to create a horizontal navigation bar Using <b>inline</b> or <b>floating</b> list items.
+        </p>
+
+        <h2>Inline List Items</h2>
+        <p>One way to build a horizontal navigation bar is to specify the li elements as inline, on addition to the
+            "standard" code from the previous page:</p>
+
+        <ul class=" ver7">
+            <li class=" ver7"><a href="#home">Home</a></li>
+            <li class=" ver7"><a href="#news">News</a></li>
+            <li class=" ver7"><a href="#contact">Contact</a></li>
+            <li class=" ver7"><a href="#about">About</a></li>
+        </ul>
+
+        <p>Example explained:</p>
+        <ul>
+            <li><span class=" tagcolor"> display; inline;</span> - By default, li elements are block elements. Here, we
+                remove the line breaks before and after each list item, to display them on one line</li>
+        </ul>
+
+        <h2>Floating List Items</h2>
+        <p>Another way of creating a horizontal navigation bar is to float the li elements, and specify a layout for the
+            navigation links:</p>
+
+        <ul class=" ver8">
+            <li class=" ver8"><a href="#home">Home</a></li>
+            <li class=" ver8"><a href="#news">News</a></li>
+            <li class=" ver8"><a href="#contact">Contact</a></li>
+            <li class=" ver8"><a href="#about">About</a></li>
+        </ul>
+
+        <p><b>Note:</b> If a !DOCTYPE is not specified, floating items can produce unexpected results.</p>
+        <p>A background color is added to the links to show the link area. The whole link area is clickable, not just
+            the text.</p>
+        <p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside of the
+            list.</p>
+
+        <p>Example explained:</p>
+        <ul>
+            <li><span class=" tagcolor">float: left;</span> - use float to get block elements to side next to each other
+            </li>
+            <li><span class=" tagcolor">display: block;</span> - Displaying the links as block elements makes the whole
+                link area clickable (not just the text), and it allows us to specify padding (and height, width,
+                margins, etc. if you want)</li>
+            <li><span class=" tagcolor">padding: 8px;</span> - Since block elements take up the full width available,
+                they cannot float next to each other. Therefore, specify some padding to make them look good</li>
+            <li><span class=" tagcolor">background-color: #dddddd;</span> - Add a gray background-color to each a
+                element</li>
+        </ul>
+
+        <p><b>Tip:</b> Add the background-color to ul instead of each a element if you want a full-width background
+            color:</p>
+
+        <ul class=" ver9">
+            <li class=" ver9"><a href="#home">Home</a></li>
+            <li class=" ver9"><a href="#news">News</a></li>
+            <li class=" ver9"><a href="#contact">Contact</a></li>
+            <li class=" ver9"><a href="#about">About</a></li>
+        </ul>
+
+        <p>A background color is added to the list instead of each link to create a full-width background color.</p>
+        <p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside of the
+            list.</p>
+
+        <h2>Horizontal Navigation Bar Examples</h2>
+        <p>Create a basic horizontal navigation bar with a dark background color and change the background colr of the
+            links when the user movers the mouse over them:</p>
+
+        <ul class=" ver10">
+            <li class=" ver10"><a href="#home">Home</a></li>
+            <li class=" ver10"><a href="#news">News</a></li>
+            <li class=" ver10"><a href="#contact">Contact</a></li>
+            <li class=" ver10"><a href="#about">About</a></li>
+        </ul>
+
+        <h2>Active/Current Navigation Link</h2>
+        <p>Add an "active" class to the current link to let the user know which page he/she is on:</p>
+
+        <ul class=" ver11">
+            <li class=" ver11"><a class="active" href="#home">Home</a></li>
+            <li class=" ver11"><a href="#news">News</a></li>
+            <li class=" ver11"><a href="#contact">Contact</a></li>
+            <li class=" ver11"><a href="#about">About</a></li>
+        </ul>
+
+        <h2>Right-Align Links</h2>
+        <p>Right-align links by floating the list items to the right (<span class=" tagcolor">float:right;</span>):</p>
+
+        <ul class=" ver12">
+            <li class=" ver12"><a href="#home">Home</a></li>
+            <li class=" ver12"><a href="#news">News</a></li>
+            <li class=" ver12"><a href="#contact">Contact</a></li>
+            <li style="float:right" class=" ver12"><a class="active" href="#about">About</a></li>
+        </ul>
+
+        <h2>Border Dividers</h2>
+        <p>Add the <span class=" tagcolor">border-right</span> property to li to create link dividers:</p>
+
+        <ul class=" ver13">
+            <li class=" ver13"><a class="active" href="#home">Home</a></li>
+            <li class=" ver13"><a href="#news">News</a></li>
+            <li class=" ver13"><a href="#contact">Contact</a></li>
+            <li style="float:right" class=" ver13"><a href="#about">About</a></li>
+        </ul>
+
+        <h2>Fixed Top Navigation Bar</h2>
+        <p><button><a href="Fixed-top.html">Click</a></button> to visit Fixed Top Fixed Horizontal Navbar!</p>
+
+        <h2>Fixed Bottom Navigation Bar</h2>
+        <p><button><a href="Fixed-bottom.html">Click</a></button> to visit Fixed Bottom Fixed Horizontal Navbar!</p>
+
+        <h2>Sticky Navbar</h2>
+        <p>Add <span class=" tagcolor">position: sticky;</span> to create a sticky navbar.</p>
+        <p>A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+        <p><button><a href="Sticky-navbar.html">Click</a></button> to visit Sticky Navbar!</p>
+
+        <hr>
+        <h2 style="background-color: gold;">More Examples</h2>
+        <h2>Responsive Topnav</h2>
+        <p>How to use CSS media queries to create a responsive top navigation.</p>
+
+        <p><button><a href="Responsive-topnav.html">Click</a></button> to visit Responsive Topbar!</p>
+
+        <h2>Responsive Sidenav</h2>
+        <p>How to use CSS media queries to create a responsive side navigation.</p>
+
+        <p><button><a href="Responsive-sidenav.html">Click</a></button> to visit Responsive Sidenav!</p>
+       
+        <h2>Dropdown Navbar</h2>
+        <p>How to add a dropdown menu inside a navigator bar.</p>
+
+        <p><button><a href="Dropdown.html">Click</a></button> to visit Dropdown Navbar!</p>
+
+</body>
+
+</html>
